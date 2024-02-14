@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GalleryLA</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="wraper">
@@ -15,7 +15,8 @@
           type="text"
           id="search-form-input"
           placeholder="Search images..."
-        /><button
+        />
+        <button
           class="search-form-button"
           type="submit"
           id="search-form-button"
@@ -24,8 +25,10 @@
         </button>
       </form>
     </div>
-    <span class="loader" id="loader"></span>
-    <ul class="gallery"></ul>
+
+    <ul class="gallery" id="gallery"></ul>
+    <button class="load-more-button" id="load-more-button">Load more</button>
+    <span class="loader" id="loader" style="display: none"></span>
 
     <script type="module" src="./main.js"></script>
   </body>

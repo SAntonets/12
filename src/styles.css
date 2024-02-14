@@ -1,20 +1,18 @@
 /**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+ * Reset styles
+ */
 @import url('./reset.css');
 
+/**
+ * Global styles
+ */
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +31,7 @@
   gap: 8px;
   margin: auto;
 }
+
 .search-form-input {
   width: 272px;
   height: 40px;
@@ -136,8 +135,6 @@ ul.gallery {
   border: 5px solid #808080;
   border-bottom-color: #4e75ff;
   border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
 
@@ -148,4 +145,29 @@ ul.gallery {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.clickable {
+  cursor: pointer;
+  user-select: none; /* Ця властивість може бути корисною для уникнення виділення тексту при кліку */
+}
+
+.load-more-button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  background-color: #4e75ff;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: auto;
+  display: none;
+}
+
+.load-more-button:hover {
+  background-color: #6c8cff;
 }
