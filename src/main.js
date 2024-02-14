@@ -1,4 +1,4 @@
-import { handleFormSubmit, loadMoreImages } from "./pixaby-api.js";
+import { handleFormSubmit, loadMoreImages } from "./js/pixaby-api.js";
 
 const searchForm = document.getElementById('search-form');
 const loadMoreButton = document.getElementById('load-more-button');
